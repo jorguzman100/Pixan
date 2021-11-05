@@ -1,0 +1,890 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+html {
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+section {
+	padding: 5rem 4rem;
+}
+
+h2 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+h2 span {
+	color: rgba(27, 144, 194, .75);
+	font-weight:normal;
+}
+
+h3 {
+	color: rgba(27, 144, 194, .75);
+	font-size: 1.5rem;
+}
+
+img {
+	border-radius: calc(.25rem - 1px);
+}
+
+.b-line {
+    position: relative;
+    width: 100px;
+    height: 3px;
+    background: rgba(27, 144, 194, .75);
+    display: block;
+    margin: 0 auto 3rem auto;
+}
+
+.v-line {
+    border-left: 3px solid rgba(27, 144, 194, .75);
+    padding-left: 20px;
+}
+
+a:hover {
+	text-decoration: none;
+  }
+
+  ol, ul {
+    list-style:disc;
+	list-style-position: outside;
+	margin-left: 25px;
+	
+}
+
+.backgroundLightGray {
+	background: rgba(247, 247, 247, 1);
+}
+
+/* Parallax effect: https://www.youtube.com/watch?v=iGam6w8Jz9g&t=728s */
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* opacity: .75; */
+}
+
+.parallaxFront {
+	background-color: rgba(0, 0, 0, .5);	
+	padding: 5rem 4rem;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header {
+	background: rgb(27, 144, 194);
+	padding: 0px 0px;
+  }
+
+  /* Parelelogramo */
+  .paralelogramo:before {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    content: '';
+    width: 265px;
+    height: 100%;
+    background: rgba(27, 144, 194, 1);
+    z-index: -1;
+    margin: 0 0 0 -15px;
+    transform: skew(-23deg);
+}
+  
+  .solidHeader {
+	background: rgba(27, 144, 194, 1);
+	color: white;
+	padding: 0px 0px;
+	transition: all 1.5s;
+  }
+  
+  .transparentHeader {
+	background: rgba(27, 144, 194, .75);
+  }
+  
+  .navbar-brand:hover > * {
+	color: rgba(255, 255, 255, 1);
+  }
+
+.navbar-toggler,
+.navbar-toggler-icon,
+.navbar a {
+  color:white !important;
+}
+
+.navbar-toggler,
+.navbar-toggler-icon,
+.navbar a:hover {
+  color: lightgrey !important;
+}
+
+header i {
+	font-size: 2rem;
+  }
+
+header .brandName {
+	display: inline-flex;
+	font-size: 1.75rem;
+  }
+  
+  header .brandSlogan {
+	font-size: 0.73rem;
+  }
+
+  .navbar {
+	  padding: 0px;
+	  height: 90px;
+  }
+
+/* Back to top button */
+
+.back-to-top {
+	position: fixed;
+	display: none;
+	right: 20px;
+	bottom: 100px;
+	z-index: 99999;
+  }
+  
+  .back-to-top i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	background: rgba(27, 144, 194, .75);
+	color: #fff;
+	transition: all 0.4s;
+  }
+  
+  .back-to-top i:hover {
+	background: rgba(27, 144, 194, 1);
+  }
+  
+
+  /* Carousel */
+
+  .backImageDivContainer {
+	width: 100%;
+	height: 550px;
+	/* background-color: rgba(0, 0, 0, 1); */
+	position: relative;
+	display: inline-block;
+  }
+  
+  .backImageDiv {
+	height: 100%;
+	background-image: url(../img/carousel/carousel.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* opacity: 0.75; */
+	display: block;
+  }
+
+  .overlayCarousel {
+	background-color: rgba(0, 0, 0, .25);
+  }
+  
+  .overlayCarousel,
+  .carousel {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  }
+
+  .carousel-item {
+	width: 100%;
+	height: 350px;
+	position: unset;
+	text-align: justify;
+	background-attachment: fixed;
+	padding: 5% 15% 0;
+	margin-top: 1rem;
+  }
+
+.carousel-caption h3 {
+	color: white;
+	font-size: 2rem;
+}
+
+.carousel-caption p {
+	font-size: 1.5rem;
+}
+
+.carousel-caption i {
+	font-size: 3.5rem;
+  }
+
+  .carousel-caption .brandName {
+	display: inline-flex;
+	font-size: 3rem;
+  }
+  
+  .carousel-caption h1 {
+	font-size: 1.5rem;
+}
+
+
+/*--------------------------------------------------------------
+# Nosotros
+--------------------------------------------------------------*/
+#nosotros .col {
+	padding: 0 30px;
+}
+
+.mision {
+	/* width: 300px; */
+	padding: 0px;
+	margin-bottom: 15px;
+	height: 100%;
+}
+
+.vision {
+	background: rgba(27, 144, 194, .75);
+	color: white;
+	padding: 30px;
+	/* width: 300px; */
+	/* height:max-content; */
+	height: 100%;
+}
+
+.vision h3 {
+	color: white;
+}
+
+.mision img {
+	vertical-align: bottom;
+  }
+
+/*--------------------------------------------------------------
+# Nuestros servicios
+--------------------------------------------------------------*/
+#servicios .col {
+	padding: 10px;
+}
+
+/* Image Hover Text Overlay Effect: https://www.youtube.com/watch?v=exb2ab72Xhs */
+#servicios .card {
+	position: relative;
+    overflow: hidden;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+	color: white;
+}
+
+#servicios .card-img {
+	display: block;
+	max-width:450px;
+	max-height:450px;
+	width: auto;
+	height: auto;
+}
+
+#servicios h3 {
+	color: white;
+	font-size: 1.25rem;
+	margin: 25px 30px 20px 30px;
+}
+
+.cardOverlay {
+    /* position: absolute;
+    background: rgba(27, 144, 194, .75);
+    width: 100%;
+	height: 100%;
+    transform: translateY(330px);
+    transition: transform 0.25s; */
+	width: 100%;
+    background: rgba(27, 144, 194, .75);
+    color: #fff;
+    position: absolute;
+    /* left: 0px; */
+    /* z-index: 9; */
+    top: calc(100% - 70px);
+    transition: all 0.3s;
+    /* padding: 13px 15px 15px; */
+    /* max-height: 48px; */
+}
+
+.cardOverlay p {
+	/* background: rgba(27, 144, 194, .75); */
+	padding: 0 30px 25px 30px;
+	margin-bottom: 0px;
+}
+
+.use_detail {
+	width: 100%;
+	text-align: right;
+	position: absolute;
+	right: 15px;
+	top: -30px;
+}
+
+.event_detail {
+	display: inline-block;
+	position: relative;
+    border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background: rgba(27, 144, 194, 1);
+	line-height: 45px;
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+}
+
+
+#servicios .card:hover .cardOverlay {
+    transform: translateY(calc(-100% + 70px));
+    transition: transform 0.25s;
+}
+
+
+/*--------------------------------------------------------------
+# Por qué elegirnos
+--------------------------------------------------------------*/
+#elegirnos {
+	background-image: url(../img/home/elegirnos.jpg);
+	padding: 0;
+}
+
+#elegirnos h2,
+#elegirnos h3,
+#elegirnos p {
+	color: white;
+}
+
+#elegirnos i,
+#formasPago i {
+	font-size: 3rem;
+	color: rgba(27, 144, 194, 1);
+}
+
+.iDiv {
+	width: 70px;
+}
+
+.iMobile {
+	margin-right: 20px;
+}
+
+/*--------------------------------------------------------------
+# Somos distribuidores
+--------------------------------------------------------------*/
+
+/* CSS flip card on hover: https://www.youtube.com/watch?v=FeJEEE3zc4U&t=847s */
+
+.flip-box {
+	/* width: 300px; */
+	max-width: 100%;
+	height: 350px;
+	perspective: 1000px;
+	margin: 10px;
+  }
+  
+  .flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 1s;
+	transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+	transform: rotateY(.5turn);
+  }
+  
+  .flip-box-front, .flip-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: calc(.5rem);
+	transform-style: preserve-3d;
+	background-color: rgba(247, 247, 247, 1);
+  }
+
+  .flip-box-front img {
+	  transform: translateZ(100px);
+	  width: 50%;
+  }
+  
+  .flip-box-back {
+	transform: rotateY(180deg);
+	border-radius: calc(.5rem);
+	transform-style: preserve-3d;
+	background-color: rgba(247, 247, 247, .9);
+  }
+
+  .flip-box-back h3 {
+	  margin-top: 30px;
+	  text-align: center;
+  }
+
+  .flip-box-back h3,
+  .flip-box-back ul {
+	transform: translateZ(100px);
+  }
+
+  .flip-box-back ul {
+	padding-right: 15px;
+	margin-left: 45px;
+}
+
+/* .sika .flip-box-front,
+.sika .flip-box-back {
+	background-color: rgba(228, 35, 47, .3);
+  }
+
+  .pasa .flip-box-front,
+  .pasa .flip-box-back {
+	background-color: rgba(253, 82, 31, .3);
+  }
+
+  .pintolux .flip-box-front,
+  .pintolux .flip-box-back {
+	background-color: rgba(210, 19, 129, .3);
+  }
+
+  .impac .flip-box-front,
+  .impac .flip-box-back {
+	background-color: rgba(8, 76, 149, .3);
+  } */
+
+  .pintolux img {
+	background: rgba(3, 17, 96, 1);
+}
+
+
+/*--------------------------------------------------------------
+# Cotizaciones & Contacto forms
+--------------------------------------------------------------*/
+.cotizacionesWrapper {
+	margin: auto;
+}
+
+.cotiza-form,
+.message-form {
+	width: 100%;
+	border-top: 3px solid rgba(27, 144, 194, .75);
+	border-bottom: 3px solid rgba(27, 144, 194, .75);
+	padding: 30px;
+	background: #fff;
+	box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .cotiza-form .form-group,
+  .message-form .form-group {
+	padding-bottom: 8px;
+  }
+  
+  .cotiza-form .validate,
+  .message-form .validate {
+	color: rgba(27, 144, 194, .75);
+	margin: 0 0 15px 0;
+	font-weight: 400;
+	font-size: 13px;
+  }
+  
+  .cotiza-form .sent-cotiza,
+  .message-form .sent-cotiza {
+	display: none;
+	color: #fff;
+	background: #18d26e;
+	text-align: center;
+	padding: 15px;
+	font-weight: 600;
+  }
+  
+  .cotiza-form input,
+  .cotiza-form textarea,
+  .message-form input,
+  .message-form textarea {
+	border-radius: 0;
+	box-shadow: none;
+	/* font-size: 14px; */
+	border-radius: 4px;
+  }
+  
+  .cotiza-form input:focus,
+  .cotiza-form textarea:focus,
+  .message-form input:focus,
+  .message-form textarea:focus {
+	border-color: rgba(27, 144, 194, .75);
+  }
+  
+  .cotiza-form input,
+  .message-form input {
+	height: 44px;
+  }
+  
+  .cotiza-form textarea,
+  .message-form textarea {
+	padding: 10px 12px;
+  }
+  
+  #submitCotizaBtn,
+  #submitMessageBtn {
+	background: rgba(27, 144, 194, .75);
+	border: 0;
+	padding: 12px 34px;
+	color: #fff;
+	transition: 0.4s;
+	border-radius: 50px;
+  }
+  
+  #submitCotizaBtn:hover,
+  #submitMessageBtn:hover {
+	background: rgba(27, 144, 194, 1);
+  }
+
+
+/*--------------------------------------------------------------
+# Contact0
+--------------------------------------------------------------*/
+
+  .info {
+  border-top: 3px solid rgba(27, 144, 194, .75);
+  border-bottom: 3px solid rgba(27, 144, 194, .75);
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.info i {
+  font-size: 20px;
+  color: rgba(27, 144, 194, .75);
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #e7f5fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.info h3 {
+	font-size: 1.5rem;
+  padding: 0 0 0 60px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  /* font-size: 14px; */
+  color: black;
+}
+
+.info a {
+  padding-left: 15px;
+}
+
+.info .email:hover i,
+.info .address:hover i,
+.info .phone:hover i {
+  background: rgba(27, 144, 194, .75);
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer .footer-newsletter {
+	padding: 50px 0;
+	text-align: center;
+	/* font-size: 1rem; */
+	/* color: #444444; */
+  }
+  
+  #footer .footer-newsletter h4 {
+	/* font-size: 1.5rem; */
+	margin: 0 0 20px 0;
+	padding: 0;
+	line-height: 1;
+	font-weight: 600;
+	/* color: #37517e; */
+  }
+  
+  #newsSubscribeDiv {
+	background: white;
+	padding: 6px 10px;
+	position: relative;
+	border-radius: 50px;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+	text-align: left;
+  }
+  
+  #newsSubscribeDiv label {
+	color: rgba(27, 144, 194, .75);
+	font-size: 13px;
+  }
+  
+  #newsSubscribeInput {
+	/* width: calc(100% - 100px); */
+	width: calc(100% - 50px);
+	padding: 6px 10px;
+	position: relative;
+	border: none;
+  }
+  
+  #newsSubscribeInput:focus {
+	outline: none;
+  }
+  
+  #newsSubscribeBtn {
+	/* position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border: 0; */
+	background: none;
+	/* font-size: 16px; */
+	border: 0;
+	margin-top: 24px;
+	padding: 12px 34px;
+	background: rgba(27, 144, 194, .75);
+	color: #fff;
+	transition: 0.3s;
+	border-radius: 50px;
+  }
+  
+  #newsSubscribeBtn:focus,
+  button:focus {
+	outline: none;
+  }
+  
+  #newsSubscribeBtn:hover {
+	background: rgba(27, 144, 194, 1);
+  }
+  
+  .footer-newsletter .validate {
+	text-align: left;
+	color: rgba(27, 144, 194, .75);
+	margin-left: 0.5rem;
+	margin-top: 5px;
+	line-height: 1.5;
+	font-size: 13px;
+  }
+  
+  #footer .footer-top {
+	padding: 60px 0 30px 0;
+	background: #fff;
+  }
+  
+  footer .logo {
+	font-size: 1.7rem;
+	color: rgba(27, 144, 194, .75);
+  }
+  
+  footer .brandName {
+	margin: 0 !important;
+	padding: 0 0 1rem 0 !important;
+	line-height: 1 !important;
+	font-weight: 600;
+	color: rgba(27, 144, 194, .75) !important;
+	display: inline-flex !important;
+  }
+  
+  footer i {
+	/* font-size: 18px; */
+	color: white;
+  }
+  
+  #footer .footer-top .footer-contact {
+	margin-bottom: 30px;
+  }
+
+  #footer .footer-top .footer-contact a {
+	  color: rgba(27, 144, 194, .75);
+  }
+
+  #footer .footer-top .footer-contact a:hover {
+	color: rgba(27, 144, 194, 1);
+}
+  
+  #footer .footer-top h3 {
+	font-size: 1.5rem;
+	margin: 0 0 10px 0;
+	padding: 2px 0 2px 0;
+	line-height: 1;
+	font-weight: 600;
+  }
+
+  #footer .footer-top p,
+  #footer .footer-top a {
+	font-size: 14px;
+  }
+  
+  #footer .footer-top .footer-links {
+	margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+	padding-right: 2px;
+	color: rgba(27, 144, 194, .75);
+	/* font-size: 18px; */
+	line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+	padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+	color: #212529;
+	transition: 0.3s;
+	display: inline-block;
+	line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+	text-decoration: none;
+	color: rgba(27, 144, 194, .75);
+  }
+  
+  #footer .footer-top .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	background: rgba(27, 144, 194, .75);
+	color: #fff;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+	background: rgba(27, 144, 194, 1);
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  #footer .footer-bottom {
+	padding: 30px 100px;
+	background: rgba(27, 144, 194, .75);
+	color: #fff;
+  }
+  
+  #footer .copyright {
+	float: left;
+  }
+  
+  #footer .credits {
+	float: right;
+	font-size: 13px;
+  }
+  
+  #footer .credits a {
+	transition: 0.3s;
+	color: grey;
+  }
+
+
+/*--------------------------------------------------------------
+# Media queries
+--------------------------------------------------------------*/
+
+/* For Galaxy Fold */
+@media (max-width: 300px) {
+	i {
+		color: rgb(0, 50, 0);
+	}
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) (cols-1) */
+@media (min-width: 576px) {
+	i {
+		color: rgb(0, 100, 0);
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up) (cols-2) */
+@media (min-width: 768px) {
+	i {
+		color: rgb(0, 150, 0);
+	}
+
+}
+
+/* Large devices (desktops, 992px and up) (cols-2-3) */
+@media (min-width: 992px) {
+	i {
+		color: rgb(0, 200, 0);
+	}
+	.mision img {
+		max-width: 550px;
+	}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)  (cols-2-3) */
+@media (min-width: 1200px) {
+	i {
+		color: rgb(0, 250, 0);
+	}
+
+}
+
+  
+  @media (max-width: 768px) {
+	.flip-box-back ul {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	#footer .footer-bottom {
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	}
+	#footer .copyright,
+	#footer .credits {
+	  text-align: center;
+	  float: none;
+	}
+	#footer .credits {
+	  padding-top: 4px;
+	}
+  }
